@@ -461,7 +461,7 @@ async def account_login(bot: Client, m: Message):
                 cook = "cookie.txt"
                 # print (rout)
                 # print(url)
-                if raw_text0 in "Iassetu" :
+            if raw_text0 in "Iassetu" :
 
                 y= url.replace("/", "%2F")
 #                 rout = f"https://vodcdn.iassetu.com/?route=common/ajax&mod=liveclasses&ack=getcustompolicysignedcookiecdn&stream=https%3A%2F%2Fvodcdn.iassetu.com%2Fvideo-edited%2F{y[56:-14]}%2Fmaster.m3u8"
