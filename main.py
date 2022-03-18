@@ -465,7 +465,7 @@ async def account_login(bot: Client, m: Message):
 
                 y= url.replace("/", "%2F")
 #                 rout = f"https://www.iassetu.com/?route=common/ajax&mod=liveclasses&ack=getcustompolicysignedcookiecdn&stream=https%3A%2F%2Fvodcdn.iassetu.com%2Flivehttporigin%2Fvideo-edited%2F{y[56:-14]}%2Fmaster.m3u8"
-                rout =f"https://www.iassetu.com/?route=common/ajax&mod=liveclasses&ack=getcustompolicysignedcookiecdn&stream=https%3A%2F%2Fvodcdn.iassetu.com%2F{y[39:-14]}%2Fmaster.m3u8"
+                rout =f"https://www.iassetu.com/?route=common/ajax&mod=liveclasses&ack=getcustompolicysignedcookiecdn&stream=https%3A%2F%2Fvodcdn.iassetu.com%2Flivehttporigin%2F{y[39:-14]}%2Fmaster.m3u8"
                 getstatusoutput(f'curl "{rout}" -c "cookie.txt"')
                 cook = "cookie.txt"
                 # print (rout)
