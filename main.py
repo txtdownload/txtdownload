@@ -606,7 +606,7 @@ async def adda_pdf(bot: Client, m: Message):
     await m.reply_text("Done")
 
     
-    @bot.on_message(filters.command(["jw"])&  ~filters.edited)
+@bot.on_message(filters.command(["jw"])&  ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
